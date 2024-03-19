@@ -1,407 +1,389 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 *{
     margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    
+    padding: 0; 
 }
 
-.header{ 
-    background-image: url(../assets/img/animate2.jpg);
-    background-size:contain;
-    background-position: center;
-    background-attachment:fixed;
-    color: rgb(212, 205, 205);
+body{
+    font-family: "Roboto", sans-serif;
+    color: #1e1e1e;
+}
+/*estilos del header*/
+.header{background-color: #d4cdcd;
+    z-index: 1000;
     .logo{
         width: 150px;
-        padding-left: 20px;
-        padding-top: 20px;
+        height: 80px;
+        object-fit: cover;
     }
-    .listaNav{
-        text-shadow: 5px 5px 10px   #4f4c4c;
-        list-style: none;
-        text-align: right;
-        .listaItem{
-            display: inline-block;
-            margin-right: 20px;
-            .linkIndex{
-                display: inline-block;
-                background-color: rgba(0, 0, 0, 0);
-                width: 150px;
-                border: 1px;
-                display: inline-block;
-            }
-        }
-    .linkNav{
-        text-shadow: 5px 5px 10px   #4f4c4c;
-        color: #fff;
-        text-decoration: none;
+    .navbar-toggler:hover {
+        border-color:#817d7d;
+    }
+    .navbar-toggler:focus {
+        color: transparent;
+    }
+    .navbar-toggler-icon {
+        color: #1e1e1e;
         font-size: 1.5rem;
+        padding-top: 5px;
+    }
+}
+.navbar-light.bg-nav{
+    background-color: #d4cdcd;
         
-    }
-}
-}
-.mainIndex{
-    background-color: #fff;
-    background-size:auto;
-    background-position: center;
-    background-attachment: fixed;    
-    .seccionTitulo{
-        text-shadow: 5px 5px 10px   #4f4c4c;
-        text-align: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        display: block;
-        color: #1e1e1e;
-        line-height: 1.5;
-        .tituloPrincipal{
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            .grosor1{
-                font-weight: 100;
-            }
-            .grosor2{
-                font-weight: 100;
+    .navbar-nav{
+        .nav-link.colorGrisOscuro{
+            color: #363636;
+            &:hover{
+            color: #817d7d;
+            border-bottom: solid 5px #FB4D71;
             }
         }
-    }
-    .seccionTarjetas{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        .tarjeta{
-            color: #1e1e1e;
-            display: inline-block;
-            width: 300px;
-            height: 350px;
-            background-color: rgb(212, 205, 205);
-            border: 1px solid black;
-            padding: 30px;
-            margin: 20px;
-            
-            .imgTarjeta{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                object-fit: cover;
+        
+        }
+        .nav-link.colorGris{
+        color: #817d7d;
+        &:hover{
+            color: #363636;
+            border-bottom: solid 5px #FB4D71;
             }
+    }
+    @media screen and (max-width: 768px){
+        .navbar-light.bg-nav{
+            width: 100vh;
+            height: 100vh;
         }
     }
-  
-    .seccionParrafo{
-        padding: 50px 50px;
-         color:#1e1e1e;
-         line-height: 1.9rem;
-        .tituloH3{
-           padding-bottom: 10px;
-        }   
-    } 
-} 
+}
 
-.mainClases{   
-    background-color: #fff;
-    background-size:auto;
-    background-position: center;
-    background-attachment: fixed;
-    .seccionTitulo{
-        text-shadow: 5px 5px 10px   #4f4c4c;
-        text-align: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        display: block;
-        color: #1e1e1e;
-        line-height: 1.5;
-        .tituloPrincipal{
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-           
-            .grosor2{
-                font-weight: 100;
-            }
-        }
-        .parrafo{
-            line-height: 1.9rem;
-            text-shadow:none;
-            color: #1e1e1e;
-        }
+/*estilos del mainIndex*/
+.carousel-item {
+    height: 50vh;
+    object-fit:auto;
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:768){
+    .carousel-item{
+        height: 100vh;
     }
-    .linkClase{
-        text-shadow: none;
-        color: #ff2d73;
-        text-decoration: none;
-        border: 1px solid #ff2d73;
-        padding: 5px;
-        margin: 5px;
-    }
-    
-    .tituloH2{
-        color: #1e1e1e;
-        padding-left: 70px;
-    }
-    .seccionTarjetasClases{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        .tarjetaClase{
-            display: inline-block;
-            width: 300px;
-            height: 300px;
-            background-color: rgb(212, 205, 205);
-            border: 1px solid black;
-            padding: 30px;
-            margin: 20px;
-        }
-    }
-   
-    .tituloH2Dos{
-        color: #1e1e1e;
-        padding-left: 70px;
-        padding-top: 30px;
-    }
-    .clases{
-        padding-left: 70px;
-        padding-bottom: 20px;
-        padding-top: 30px;
-        color: #1e1e1e;
-    }
-    .mapa{
-        box-sizing: border-box;
-        padding-left: 50px;
-        padding-right: 35px;
+}
+.seccionTitulo{
+    text-align: center;
+    display: block;
+    color: #1e1e1e;
+    line-height: 1.5;
+    .tituloPrincipal{
+        padding-top: 50px;
         padding-bottom: 50px;
-        width: 1250px;
-        height: 300px;
-    }
-   
-}
-
-.mainRecetas{
-    background-color: #fff;
-    background-size:auto;
-    background-position: center;
-    background-attachment: fixed;
-    .seccionTitulo{
-        text-shadow: 5px 5px 10px   #4f4c4c;
-        text-align: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        display: block;
-        color: #1e1e1e;
-        line-height: 1.5;
-        .tituloPrincipal{
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            .grosor{
-                font-weight: 100;
-            }
+        font-size: 3rem;
+        font-weight: 700;
+        .grosor1{
+            font-weight: 100;
         }
-        .parrafo{
-            line-height: 1.9rem;
-            color: #1e1e1e;
+        .grosor2{
+            font-weight: 100;
         }
     }
-    .tituloH2{
-        color: #1e1e1e;
-        padding-left: 70px;
-    }
-    
-    .seccionComida{
-        padding-bottom: 30px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        .receta{
-            color: #1e1e1e;
-            display: inline-block;
-            width: 300px;
-            height: 300px;
-            background-color: rgb(212, 205, 205);
-            border: 1px solid black;
-            padding: 30px;
-            margin: 20px;    
-            .img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                object-fit: cover;
-            }
-        }
+    .parrafo{
+        padding-top: 30px;
+        padding-bottom:30px;
+        text-align: left;
     }
 }    
 
-.mainNosotras{
-    background-color: #fff;
-    background-size:auto;
-    background-position: center;
-    background-attachment: fixed;
-         
-    .seccionTitulo{ 
-        text-align: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        display: block;
-        color: #1e1e1e;
-        line-height: 1.5;
-        .tituloPrincipal{ 
-            text-shadow: 5px 5px 10px   #4f4c4c;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            .grosor{
-                font-weight: 100;
-            }
-        }
-        .parrafo{
-            line-height: 1.9rem;
-            text-shadow: none;
-            color: #1e1e1e;
-            .tituloH3{
-                text-shadow: none;
-            }
-        }
+.tituloH2{
+    color: #1e1e1e;
+    text-align: center;
+    .parrafo{
+        padding-top: 30px;
+        padding-bottom:30px;
+        text-align: left;
     }
-    .tituloH2{
+}    
+
+
+.btn-primary{
+    width: 120px;
+    background-color: rgba(212, 12, 12, 0);
+    color: #1e1e1e;
+    border: 1px solid #363636;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    &:hover{
         color: #1e1e1e;
-        padding-left: 70px;
+        background-color: #d4cdcd;
+        border-color: #d4cdcd;
+        border-bottom: solid 5px #FB4D71;
     }
-    .seccionOpiniones{
-        padding-bottom: 30px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        .opiniones{
-            color: #1e1e1e;
-            display: inline-block;
-            width: 400px;
-            height: 200px;
-            background-color: rgb(212, 205, 205);
-            border: 1px solid black;
-            padding-bottom: 200px;
-            padding-left: 20px;
-            padding-top: 20px;
-            padding-right: 20px;
-            margin: 20px;
-            
-            .imgOpiniones{
-                width: 250px;
-                height: 250px;
-                object-fit:contain;
-                object-fit: cover;
-            }
-            .texto{
-                padding: 5px;
-            }
-        }
+}
+.row{
+    padding: 30px;
+}
+.card{
+    text-align: center;
+    .imgOpiniones {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 300px;
     }
 }
 
-.mainContacto{
-    background-color: #fff;
-    background-size:auto;
-    background-position: center;
-    background-attachment: fixed;
-    .seccionTitulo{
-        text-shadow: 5px 5px 10px   #4f4c4c;
-        text-align: center;     
-        padding-top: 80px;
-        padding-bottom: 80px;
-        display: block;
-        color: #1e1e1e;
-        line-height: 1.5;
-        .tituloPrincipal{
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            .grosor1{
-                font-weight: 100;
-            }
-            .grosor2{
-                font-weight: 100;
-            }
-        }
+.seccionComunicarse{
+        .imgContacto{
+        height: 500px;
+        width: 400px;
     }
-    .seccionH2{
-        color: #1e1e1e;
-        .tituloH2{
+    .formularioContacto{
+        .etiqueta{
+            font-size: 1.1rem;
+            color: #1e1e1e;
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .relleno{
+            width: 100%;
+            font-size: 1.1rem;
+            border: 1px solid  #363636;
+            border-radius: 7px;
+            padding: 10px;
+            margin: 5px 5px 20px 5px;
+        }
+        .relleno:active{
+            background-color:#d4cdcd;
+        }
+        .relleno:focus {
+            color:#1e1e1e;
+            background-color: #d4cdcd;
+            border-color: #363636;
+            outline: 0;
+            box-shadow: 0 0 0 0.1rem #553d2a57;
+        }
+        .divBotones {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0px 30px 0px 30px;;
+        }
+        .boton{
+            width: 120px;
+            background-color: rgba(212, 12, 12, 0);
+            color: #1e1e1e;
+            border: 1px solid #363636;
+            border-radius: 25px;
+            font-size: 16px;
             text-align: center;
-            color: #1e1e1e;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
         }
-    }
-    .seccionSuscribirse{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        .suscribirse{
+        .boton:hover{
             color: #1e1e1e;
-            display: inline-block;
-            width: 400px;
-            height: 370px;
-            background-color: rgb(212, 205, 205);
-            border: 1px solid black;
-            padding-bottom: 200px;
-            padding-left: 20px;
-            padding-top: 20px;
-            padding-right: 20px;
-            margin: 20px;
-            .imgSuscribirse{
-                width: 250px;
-                height: 250px;
-                object-fit: contain;
-                object-fit: cover;
-            }
-            .formulario{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                object-fit: cover;
-                line-height: 2rem;
-            }
+            background-color: #d4cdcd;
+            border-color: #d4cdcd;
+            border-bottom: solid 5px #FB4D71;
+        }     
+    }
+    @media screen and (max-width: 768px){
+        .formularioContacto{
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+        .imgContacto{
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        margin-bottom: 30px;
         }
     }
 }
 
 .footer{
-    background-image: url(../assets/img/back7.jpg);
-    .seccionFooter{
-        padding-top: 30px;
-        color: rgb(66, 64, 64);
-        text-align: center;
-        .Icon{
-            padding: 20px 20px;
-            text-decoration: none;
-        }
+    background-color: #d4cdcd;
+    .logofooter{
+        width: 150px;
+        height: 80px;
+        object-fit: cover;
+    }  
+    .footerCol{
+        margin-top: 20px;
     }
-    .listaNav2{
-        text-shadow: 5px 5px 10px   rgb(56, 55, 55);
+    .listaNavFooter{
         list-style: none;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        .listaItem{
-            display: inline-block;
-            margin-right: 20px;
+        text-align: left;
+        .listaItemFooter{
+            margin: 0px 0px 5px 0px;
+            .linkNavFooter{
+                color: #363636;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+            .linkNavFooter:hover{
+                color: #817d7d;
+            }
+            .linkNavFooter:active{
+                font-size: 1.3rem;
+            }
         }
-        .linkNav{
-            color: rgb(66, 64, 64);
-            text-decoration: none;
-        
+    }  
+    .tituloFooter{
+        font-size: 1.3rem;
+        color: #363636;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .IconRedes{
+        color:#363636;
+        font-size: 25px;
+        margin: 7px;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        width: 100%;
+        margin: 0 auto;
+       
+       .listaNavFooter{
+        text-align: left;
+        padding: 0px 12px;
+        margin: 20px 0px 0px;
+       }
+    }
+}
+.seccionRecetas{ 
+    .grillaRecetas{
+        width: 70%;
+        padding-top: 30px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 250px 180px 350px;
+        grid-template-areas: "grilla1 grilla1"
+                             "grilla2 grilla3"
+                             "grilla4 grilla3"
+                             "grilla4 grilla5"
+                             "grilla6 grilla7"
+                             "grilla9 grilla8"
+                             "grilla9 grilla10"
+                             ;
+        gap: 30px;   
+        .receta1{
+            grid-area: grilla1;
+        }
+        .receta2{
+            grid-area: grilla2;
+        }
+        .receta3{
+            grid-area: grilla3;
+            position: relative;
+        } 
+        .receta4{
+            grid-area: grilla7;
+            position: relative;
+           
+        }    
+        .receta5{
+            grid-area: grilla5;
+        }
+        .receta6{
+            grid-area: grilla6;
+        }
+        .receta7{
+            grid-area: grilla4;
+        }
+        .receta8{
+            grid-area: grilla8;
+        }
+        .receta9{
+            grid-area: grilla9;
+        }
+        .receta10{
+            grid-area: grilla10;
+        }
+        .receta1, .receta2, .receta3, .receta4, .receta5, .receta6, .receta7, .receta8, .receta9, .receta10{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                &:hover{
+                    color: #1e1e1e;
+                    background-color: #d4cdcd;
+                    border-bottom: solid 5px #FB4D71;
+                }
+            }
+
+        }   
+    }
+    @media screen and (max-width: 768px){
+        .grillaRecetas{
+            width: 85%;
+            grid-template-rows: 150px 150px 120px 180px;
+            gap: 20px;
         }
     }
 }
+.imgError{
+    width: 300px;
+    height: 300px;    
+}
+.tituloH2Error{
+    color: #1e1e1e;
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+.h3Error{
+    color: #1e1e1e;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+.linkError{
+    box-sizing: content-box;
+    display: inline;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100px;
+    color: #1e1e1e;
+    text-decoration: none;
+    border: 1px solid #363636;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin-top:10px;
+}
+.linkError:hover{
+    background-color: #d4cdcd;
+    border-color: #d4cdcd;
+    border-bottom: solid 5px #FB4D71;   
+    color: #1e1e1e;
+   
+}
+@media screen and (max-width: 768px){
+    .tituloH2Error{
+        font-size: 2.2rem;
+    }
+    .h3Error{
+        font-size: 1.1rem;
+    }
+    .imgError{
+        width: 250px;
+        height: 250px;
+    }
+}
 
-
-
-
-    
-
-
-
-    
-
-
-    
