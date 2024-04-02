@@ -36,19 +36,16 @@ body{
     .navbar-nav{
         .nav-link.colorGrisOscuro{
             color: #363636;
-            &:hover{
-            color: #817d7d;
-            border-bottom: solid 5px #FB4D71;
-            }
+           
         }
-        
+        .dropdown-item{
+            background-color: #fff;
+            color: #1e1e1e;
+        }
         }
         .nav-link.colorGris{
         color: #817d7d;
-        &:hover{
-            color: #363636;
-            border-bottom: solid 5px #FB4D71;
-            }
+        
     }
     @media screen and (max-width: 768px){
         .navbar-light.bg-nav{
@@ -57,8 +54,39 @@ body{
         }
     }
 }
+/* animaciones para barra de navegación*/
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #FB4D71;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+  
 
-/*estilos mainIndex*/
+/*carrusel mainIndex*/
 .carousel-item {
     height: 50vh;
     object-fit:auto;
@@ -73,6 +101,7 @@ body{
         height: 100vh;
     }
 }
+/*titulos h1 todas las paginas*/
 .seccionTitulo{
     text-align: center;
     display: block;
@@ -102,19 +131,14 @@ body{
        }
     }
 }    
-
+/*titulo h2 todas las paginas*/
 .tituloH2{
     color: #1e1e1e;
     text-align: center;
     padding-top: 50px;
 }   
 
-.tituloH2contacto{
-    color: #1e1e1e;
-    text-align: center;
-}
-
-
+/*botones*/
 .btn-primary{
     width: 120px;
     background-color: rgba(212, 12, 12, 0);
@@ -124,33 +148,79 @@ body{
     font-size: 16px;
     text-align: center;
     padding: 10px;
-    margin: 5px;
     cursor: pointer;
     &:hover{
         color: #1e1e1e;
-        background-color: #d4cdcd;
-        border-color: #d4cdcd;
-        border-bottom: solid 5px #FB4D71;
+        background-color: rgba(212, 12, 12, 0);
+        border-color: #363636;
+       
     }
 }
+/*animaciones para los botones*/
+.hvr-radial-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(212, 12, 12, 0);;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-radial-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d4cdcd;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+    color: #1e1e1e;
+  }
+  .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+/*estilos de pagina nosotras*/
 .row{
     padding: 30px;
+    .card{
+        text-align: center;
+        .imgOpiniones {
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        width: 200px;
+        height: 300px;
+        }
+        .resaltar{
+        font-weight: bold;
+        color: #FB4D71;
+        }
+    }
 }
-.card{
+/*estilos Contacto*/
+/*titulo h2 solo pagina contancto*/
+.tituloH2contacto{
+    color: #1e1e1e;
     text-align: center;
-    .imgOpiniones {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    width: 200px;
-    height: 300px;
-    }
-    .resaltar{
-    font-weight: bold;
-    color: #FB4D71;
-    }
 }
-
 .seccionComunicarse{
         .imgContacto{
         height: 500px;
@@ -183,29 +253,9 @@ body{
             box-shadow: 0 0 0 0.1rem #553d2a57;
         }
         .divBotones {
-            display: flex;
-            justify-content: flex-end;
-            margin: 0px 30px 0px 30px;;
+            margin: 0px 30px 0px 30px;
+            border-radius: 25px;      
         }
-        .boton{
-            width: 120px;
-            background-color: rgba(212, 12, 12, 0);
-            color: #1e1e1e;
-            border: 1px solid #363636;
-            border-radius: 25px;
-            font-size: 16px;
-            text-align: center;
-            padding: 10px;
-            margin: 5px;
-            cursor: pointer;
-            &:hover{
-            color: #1e1e1e;
-            background-color: #d4cdcd;
-            border-color: #d4cdcd;
-            border-bottom: solid 5px #FB4D71;
-            }     
-        }
-        
     }
     @media screen and (max-width: 768px){
         .formularioContacto{
@@ -221,7 +271,7 @@ body{
         }
     }
 }
-
+/*estilos del footer*/
 .footer{
     background-color: #d4cdcd;
     .logofooter{
@@ -265,6 +315,49 @@ body{
         text-align: left;
     }
 }
+/*animaciones del footer*/
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+  
 @media screen and (max-width: 768px){
     .footer{
         width: 100%;
@@ -277,6 +370,8 @@ body{
        }
     }
 }
+
+/*estilos de pagina recetas*/
 .seccionRecetas{ 
     .grillaRecetas{
         width: 70%;
@@ -306,8 +401,7 @@ body{
         } 
         .receta4{
             grid-area: grilla7;
-            position: relative;
-           
+            position: relative; 
         }    
         .receta5{
             grid-area: grilla5;
@@ -333,14 +427,25 @@ body{
                 height: 100%;
                 object-fit: cover;
                 border-radius: 12px;
-                &:hover{
-                    color: #1e1e1e;
-                    background-color: #d4cdcd;
-                    border-bottom: solid 5px #FB4D71;
-                }
+               
             }
 
         }   
+        /*animaciones para recetas*/
+        .hvr-box-shadow-outset {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: box-shadow;
+            transition-property: box-shadow;
+          }
+          .hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+          }
     }
     @media screen and (max-width: 768px){
         .grillaRecetas{
@@ -350,6 +455,8 @@ body{
         }
     }
 }
+
+/*estilos de pagina error*/
 .imgError{
     width: 300px;
     height: 300px;    
@@ -371,29 +478,31 @@ body{
     font-size: 1.2rem;
     padding-bottom: 50px;
 }
-.linkError{
-    box-sizing: content-box;
-    display: inline;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0);
-    width: 100px;
-    color: #1e1e1e;
-    text-decoration: none;
-    border: 1px solid #363636;
-    border-radius: 25px;
-    font-size: 16px;
+.divBotoneserror {
     text-align: center;
-    padding: 10px;
-    margin-top:10px;
-    &:hover{
-    background-color: #d4cdcd;
-    border-color: #d4cdcd;
-    border-bottom: solid 5px #FB4D71;   
-    color: #1e1e1e;
+    padding: 0%;
+    border-radius: 25px;      
+    .btn-error{
+        width: 100%;
+        background-color: rgba(212, 12, 12, 0);
+        color: #1e1e1e;
+        border: 1px solid #363636;
+        border-radius: 25px;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        &:hover{
+            color: #1e1e1e;
+            background-color: rgba(212, 12, 12, 0);
+            border-color: #363636;
+           
+        }
+    }
+    
 }
 
    
-}
 @media screen and (max-width: 768px){
     .tituloH2Error{
         font-size: 2.2rem;

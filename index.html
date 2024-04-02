@@ -10,6 +10,8 @@
     <script src="https://kit.fontawesome.com/b74e9db550.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">   
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="header">
@@ -23,10 +25,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end gap-2">
-                <li class="nav-item">
+                <li class="nav-item hvr-underline-from-center">
                     <a class="nav-link active colorGris fs-5" aria-current="page" href="#">Inicio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hvr-underline-from-center">
                     <a class="nav-link colorGrisOscuro fs-5"  href="./pages/clases.html">Clases</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -34,15 +36,15 @@
                         Recetas
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./pages/recetas.html#Desayuno">Desayuno</a></li>
-                    <li><a class="dropdown-item" href="./pages/recetas.html#Almuerzo">Almuerzo</a></li>  
-                    <li><a class="dropdown-item" href="./pages/recetas.html#Cena">Cena</a></li>                   
+                    <li><a class="dropdown-item hvr-underline-from-center" href="./pages/recetas.html#Desayuno">Desayuno</a></li>
+                    <li><a class="dropdown-item hvr-underline-from-center" href="./pages/recetas.html#Almuerzo">Almuerzo</a></li>  
+                    <li><a class="dropdown-item hvr-underline-from-center" href="./pages/recetas.html#Cena">Cena</a></li>                   
                     </ul>
                 </li>
-              <li class="nav-item">
+              <li class="nav-item hvr-underline-from-center">
                     <a class="nav-link colorGrisOscuro fs-5" href="./pages/nosotras.html">Nosotras</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hvr-underline-from-center">
                     <a class="nav-link colorGrisOscuro fs-5" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
@@ -53,20 +55,18 @@
 
     <main>
         <section class="seccionTitulo">
-            <h1 class="tituloPrincipal"> <span class="grosor1"> Tu versión </span> FITNESS <br> <span class="grosor2"> comienza </span> HOY</h1>   
+            <h1 class="tituloPrincipal" data-aos="fade-up"> <span class="grosor1"> Tu versión </span> FITNESS <br> <span class="grosor2"> comienza </span> HOY</h1>   
             <section  loading="lazy" class="container">
-                <p class="parrafo">
+                <p class="parrafo" data-aos="fade-up" data-aos-delay="200">
                     ¡Bienvenido a <span class="resaltar">Malena Fitness,</span>  tu primer paso para alcanzar tus metas de bienestar y salud! En nuestro mundo, el entrenamiento no es solo una actividad, es un estilo de vida. 
                  </p>
-                 <p class="parrafo">Guiados por la pasión por el movimiento, la nutrición equilibrada y el desarrollo personal, te ofrecemos un enfoque integral para transformar tu cuerpo y tu mente.</p>
-                 <p class="parrafo">Nuestro compromiso se basa en brindarte las herramientas, el apoyo y la motivación necesarios para que alcances tu máximo potencial físico y mental.</p>
-                 <p class="parrafo">Unite a nuestra comunidad y descubri el poder transformador del entrenamiento con <span class="resaltar">Malena Fitness.</span> </p>
-
-                 <!--¡Bienvenido a Malena Fitness, tu primer paso para alcanzar tus metas de bienestar y salud! En nuestro mundo, el entrenamiento no es solo una actividad, es un estilo de vida. Guiados por la pasión por el movimiento, la nutrición equilibrada y el desarrollo personal, en Malena Fitness te ofrecemos un enfoque integral para transformar tu cuerpo y tu mente. Nuestro compromiso se basa en brindarte las herramientas, el apoyo y la motivación necesarios para que alcances tu máximo potencial físico y mental. Unite a nuestra comunidad y descubri el poder transformador del entrenamiento con Malena Fitness. -->
-            </section>
+                 <p class="parrafo" data-aos="fade-up" data-aos-delay="300">Guiados por la pasión por el movimiento, la nutrición equilibrada y el desarrollo personal, te ofrecemos un enfoque integral para transformar tu cuerpo y tu mente.</p>
+                 <p class="parrafo" data-aos="fade-up" data-aos-delay="400">Nuestro compromiso se basa en brindarte las herramientas, el apoyo y la motivación necesarios para que alcances tu máximo potencial físico y mental.</p>
+                 <p class="parrafo" data-aos="fade-up" data-aos-delay="500">Unite a nuestra comunidad y descubri el poder transformador del entrenamiento con <span class="resaltar">Malena Fitness.</span> </p>
+            </section>     
         </section>
         <section>
-            <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel" data-aos="fade-up" >
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -115,12 +115,12 @@
             <div class="row alto40vh">
                 <section class="col-12 col-md-4 footerCol">
                      <a href="./index.html">
-                        <img class="logofooter" src="./assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitnessFooter" loading="lazy">
+                        <img class="logofooter" src="./assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitnessFooter" loading="lazy" data-aos="fade-up">
                     </a>
                 </section>
                 
                 <section class="col-12 col-md-4 footerCol">
-                    <nav id="malenaFitness">
+                    <nav id="malenaFitness" data-aos="fade-up">
                         <ul class="listaNavFooter">
                             <h4 class="tituloFooter">MALENA FITNESS</h4>
                             <li class="listaItemFooter"><a class="linkNavFooter" href="./index.html">Inicio</a></li>
@@ -132,15 +132,19 @@
                     </nav>
                 </section>
                 
-                <section class="col-12 col-md-4 footerCol">
+                <section class="col-12 col-md-4 footerCol" data-aos="fade-up">
                     <h4 class="tituloFooter">SEGUINOS EN REDES</h4>
-                    <a href="404.html"><i class="fa-brands fa-square-whatsapp IconRedes"></i></a>
-                    <a href="https://www.instagram.com/malena.fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-square-instagram IconRedes"></i></i></a>
+                    <a class="hvr-float-shadow" href="404.html"><i class="fa-brands fa-square-whatsapp IconRedes"></i></a>
+                    <a class="hvr-float-shadow" href="https://www.instagram.com/malena.fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-square-instagram IconRedes "></i></i></a>
                 </section>
             </div>
         </section>
     </footer>
    
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

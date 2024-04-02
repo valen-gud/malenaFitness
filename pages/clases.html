@@ -10,6 +10,8 @@
         <script src="https://kit.fontawesome.com/b74e9db550.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
+        <link href="css/hover.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header class="header">
@@ -18,15 +20,15 @@
                 <a class="navbar-brand" href="../index.html">
                     <img class="logo" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitness"> 
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end gap-2">
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link active colorGrisOscuro fs-5" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link active colorGris fs-5"  href="#">Clases</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -34,15 +36,15 @@
                             Recetas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/recetas.html#Desayuno">Desayuno</a></li>
-                            <li><a class="dropdown-item" href="../pages/recetas.html#Almuerzo">Almuerzo</a></li>  
-                            <li><a class="dropdown-item" href="../pages/recetas.html#Cena">Cena</a></li>                 
+                            <li><a class="dropdown-item hvr-underline-from-center" href="../pages/recetas.html#Desayuno">Desayuno</a></li>
+                            <li><a class="dropdown-item hvr-underline-from-center" href="../pages/recetas.html#Almuerzo">Almuerzo</a></li>  
+                            <li><a class="dropdown-item hvr-underline-from-center" href="../pages/recetas.html#Cena">Cena</a></li>                 
                         </ul>
                     </li>
-                  <li class="nav-item">
+                  <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link colorGrisOscuro fs-5" href="./nosotras.html">Nosotras</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link colorGrisOscuro fs-5" href="./contacto.html">Contacto</a>
                   </li>
                 </ul>
@@ -53,19 +55,18 @@
     
         <main class="container">
             <section class="seccionTitulo">
-                <h1 class="tituloPrincipal"> CONFIÁ <span class="grosor2"> en el </span> PROCESO </h1>   
-                <p class="parrafo">En <span class="resaltar">Malena Fitness</span> queremos que tu lugar de entrenamiento no sea una complicación.<p>
-                <p class="parrafo">Por eso te ofrecemos la modalidad <a class="linkClase btn btn-primary rounded-pill" href="#videosDeEntrenamiento">VIRTUAL</a>  desde la comodidad de tu casa o la modalidad <a class="linkClase btn btn-primary rounded-pill" href="#clasesPresenciales">PRESENCIAL</a>  en distintas ubicaciones al aire libre. ¡Ambas opciones con un seguimiento personalizado! </p>
+                <h1 class="tituloPrincipal" data-aos="fade-up"> CONFIÁ <span class="grosor2"> en el </span> PROCESO </h1>   
+                <p class="parrafo" data-aos="fade-up"  data-aos-delay="200" >En <span class="resaltar">Malena Fitness</span> queremos que tu lugar de entrenamiento no sea una complicación.<p>
+                <p class="parrafo" data-aos="fade-up"  data-aos-delay="300">Por eso te ofrecemos la modalidad <a class=" btn btn-primary rounded-pill hvr-radial-out " href="#videosDeEntrenamiento">VIRTUAL</a>  desde la comodidad de tu casa o la modalidad <a class="btn btn-primary rounded-pill hvr-radial-out" href="#clasesPresenciales">PRESENCIAL</a>  en distintas ubicaciones al aire libre. ¡Ambas opciones con un seguimiento personalizado! </p>
             </section> 
-        <!---->
-            <section class="tituloH2">
+            <section class="tituloH2" data-aos="fade-up"  data-aos-delay="400">
                 <h2 id="videosDeEntrenamiento">Videos de entrenamiento</h2>
             </section>
 
             <section class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4"  >
                     <div class="col">
-                        <div class="card h-100 rounded">
+                        <div class="card h-100 rounded" data-aos="flip-left" data-aos-delay="100" >
                             <iframe class="rounded" height="300" src="https://www.youtube.com/embed/4I-dymlpGOQ?si=mn7-yWNWMkSq_atu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                             <div class="card-body">
                             <h5 class="card-title">Cuerpo completo</h5>
@@ -73,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="flip-left" data-aos-delay="200">
                         <div class="card h-100 rounded">
                             <iframe class="rounded" height="300" src="https://www.youtube.com/embed/DUvXoAwR-8k?si=3DI8a0xhfRTBuRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" ></iframe>
                             <div class="card-body">
@@ -82,7 +83,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="flip-left" data-aos-delay="300">
                         <div class="card h-100 rounded">
                             <iframe class="rounded"  height="300" src="https://www.youtube.com/embed/CrOX2M7CBns?si=y-g1Bmah0kD7crV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" ></iframe>
                             <div class="card-body">
@@ -93,9 +94,9 @@
                 </div>
               </div>
 
-              <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="row row-cols-1 row-cols-md-3 g-4" >
                 <div class="col">
-                  <div class="card h-100 rounded">
+                  <div class="card h-100 rounded" data-aos="flip-left" data-aos-delay="100">
                     <iframe class="rounded"  height="300" src="https://www.youtube.com/embed/ljNgkSctkXg?si=4ggc_VZyxST0i1xj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" ></iframe>
                     <div class="card-body">
                       <h5 class="card-title">Cuerpo completo - Intenso</h5>
@@ -104,7 +105,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 rounded">
+                  <div class="card h-100 rounded" data-aos="flip-left" data-aos-delay="200">
                     <iframe class="rounded" height="300" src="https://www.youtube.com/embed/Yckor17vTrU?si=HgNd6BZtNAEBLRMj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" ></iframe>
                     <div class="card-body">
                       <h5 class="card-title">Abdominales - Intenso</h5>
@@ -113,7 +114,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 rounded">
+                  <div class="card h-100 rounded" data-aos="flip-left" data-aos-delay="300">
                     <iframe class="rounded"  height="300" src="https://www.youtube.com/embed/wIdd1Cg_c74?si=vNLfOl47T7yWNJit" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" ></iframe>
                     <div class="card-body">
                       <h5 class="card-title">Piernas y Gluteos - Intenso</h5>
@@ -125,18 +126,18 @@
             </section>
           
             <section class="tituloH2">
-                <h2 id="clasesPresenciales">Clases presenciales</h2>
-                <p class="parrafo">Aprovechando el entorno natural para brindarte una experiencia de entrenamiento única y estimulante, donde el aire fresco y el paisaje inspirador son tus mejores aliados.</p>
+                <h2 id="clasesPresenciales" data-aos="fade-up"  data-aos-delay="200">Clases presenciales</h2>
+                <p class="parrafo" data-aos="fade-up"  data-aos-delay="300">Aprovechando el entorno natural para brindarte una experiencia de entrenamiento única y estimulante, donde el aire fresco y el paisaje inspirador son tus mejores aliados.</p>
             </section>
-            <section class="container">
-                <div class="card mb-3 rounded">
+            <section class="container" >
+                <div class="card mb-3 rounded" data-aos="fade-up" data-aos-delay="400" >
                     <div class="card-body">
                         <h5 class="card-title">Parque Thays - Recoleta</h5> 
                         <iframe  class="rounded" width="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11048.71519142444!2d-58.396058088238526!3d-34.58385905376486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa43b66f5df%3A0xf92167db2b401378!2sParque%20Thays!5e0!3m2!1ses-419!2sar!4v1707828479753!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
+                <div class="card" data-aos="fade-up"data-aos-delay="500">
+                    <div class="card-body" >
                         <h5 class="card-title">Parque Saavedra - Saavedra</h5>                   
                         <iframe  class="rounded" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31260.11352210394!2d-58.49759386304291!3d-34.55824740016949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.     1!3m3!1m2!1s0x95bcb696ab5cb4ed%3A0x887c745720a0e9b6!2sParque%20Saavedra!5e0!3m2!1ses-419!2sar!4v1707831448458!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -149,12 +150,12 @@
                 <div class="row alto40vh">
                     <section class="col-12 col-md-4 footerCol">
                          <a href="../index.html">
-                            <img class="logofooter" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitnessFooter" loading="lazy">
+                            <img class="logofooter" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitnessFooter" loading="lazy" data-aos="fade-up">
                         </a>
                     </section>
                     
                     <section class="col-12 col-md-4 footerCol">
-                        <nav id="malenaFitness">
+                        <nav id="malenaFitness" data-aos="fade-up">
                             <ul class="listaNavFooter">
                                 <h4 class="tituloFooter">MALENA FITNESS</h4>
                                 <li class="listaItemFooter"><a class="linkNavFooter" href="../index.html">Inicio</a></li>
@@ -166,15 +167,19 @@
                         </nav>
                     </section>
                     
-                    <section class="col-12 col-md-4 footerCol">
+                    <section class="col-12 col-md-4 footerCol" data-aos="fade-up">
                         <h4 class="tituloFooter">SEGUINOS EN REDES</h4>
-                        <a href="404.html"><i class="fa-brands fa-square-whatsapp IconRedes"></i></a>
-                        <a href="https://www.instagram.com/malena.fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-square-instagram IconRedes"></i></i></a>
+                        <a class="hvr-float-shadow" href="404.html"><i class="fa-brands fa-square-whatsapp IconRedes"></i></a>
+                        <a class="hvr-float-shadow" href="https://www.instagram.com/malena.fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-square-instagram IconRedes"></i></i></a>
                     </section>
                 </div>
             </section>
         </footer>
 
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
     </body>
 </html>
