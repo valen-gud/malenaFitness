@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Completá nuestro formulario de contacto y unite a nuestra comunidad comprometida con el bienestar y la superación personal.">
-        <meta name="keywords" content="Contacto, comunicate con nosotros,comentarios, asesoramiento, asistencia profesional, asistencia personalizada,.">
+        <meta name="keywords" content="Contacto, comunicate con nosotros,comentarios, asesoramiento, asistencia profesional, asistencia personalizada.">
         <title>Contacto | Malena Fitness</title>
         <link rel="shortcut icon" href="../favicon.mancuerna.ico.png">
         <script src="https://kit.fontawesome.com/b74e9db550.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
-        
+        <link href="css/hover.css" rel="stylesheet" media="all">     
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
     </head>
     <body>
         <header class="header">
@@ -19,15 +20,15 @@
                 <a class="navbar-brand" href="../index.html">
                     <img class="logo" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitness"> 
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end gap-2">
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link active colorGrisOscuro fs-5" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link colorGrisOscuro fs-5"  href="./clases.html">Clases</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -35,15 +36,15 @@
                             Recetas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../pages/recetas.html#Desayuno">Desayuno</a></li>
-                            <li><a class="dropdown-item" href="../pages/recetas.html#Almuerzo">Almuerzo</a></li>  
-                            <li><a class="dropdown-item" href="../pages/recetas.html#Cena">Cena</a></li>                         
+                            <li><a class="dropdown-item hvr-underline-from-center" href="../pages/recetas.html#Desayuno">Desayuno</a></li>
+                            <li><a class="dropdown-item hvr-underline-from-center" href="../pages/recetas.html#Almuerzo">Almuerzo</a></li>  
+                            <li><a class="dropdown-item hvr-underline-from-center" href="../pages/recetas.html#Cena">Cena</a></li>                         
                         </ul>
                     </li>
-                  <li class="nav-item">
+                  <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link colorGrisOscuro fs-5" href="./nosotras.html">Nosotras</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hvr-underline-from-center">
                         <a class="nav-link active colorGris fs-5" href="#">Contacto</a>
                   </li>
                 </ul>
@@ -54,16 +55,16 @@
 
         <main>
             <section class="seccionTitulo">
-                <h1 class="tituloPrincipal"> <span class="grosor1"> Tu primer paso hacia un </span> CAMBIO POSITIVO <span class="grosor2"></span></h1>   
+                <h1 class="tituloPrincipal" data-aos="fade-up"> <span class="grosor1"> Tu primer paso hacia un </span> CAMBIO POSITIVO <span class="grosor2"></span></h1>   
             </section>
             <section class="seccionComunicarse">
-                <section class="comunicate">
+                <section>
                     <div class="container">
                         <div class="row align-items-start">
-                            <div class="col-12 col-md-6 text-center">
+                            <div class="col-12 col-md-6 text-center" data-aos="flip-left" data-aos-delay="200">
                                 <img class="imgContacto rounded-pill" src="../assets/img/entrena3.jpg" alt="comunicate">
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
                                 <h2 class="tituloH2contacto">¡COMUNICATE!</h2>
                                 <form class="formularioContacto" action="404.html" method="post">
                                     <label class="etiqueta" for="nombre">Nombre</label><br>
@@ -74,9 +75,12 @@
                                     <input class="relleno" type="text" id="telefono" name="telefono" required><br>
                                     <label class="etiqueta" for="mensaje">Mensaje</label><br>
                                     <textarea class="relleno" id="mensaje" name="mensaje" placeholder="Quiero comenzar a entrenar..." rows="4" required></textarea><br> 
-                                    <div class="divBotones">
-                                        <input class="boton" type="reset" value="Borrar">
-                                        <input class="boton" type="submit" value="Enviar">
+                                    <div class="divBotones hvr-radial-out">
+                                        <input class="btn-primary" type="reset" value="Borrar">
+                                       
+                                    </div>
+                                    <div class="divBotones hvr-radial-out">
+                                         <input class="btn-primary" type="submit" value="Enviar">
                                     </div>
                                 </form>
                             </div>
@@ -92,12 +96,12 @@
                 <div class="row alto40vh">
                     <section class="col-12 col-md-4 footerCol">
                         <a href="../index.html">
-                            <img class="logofooter" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitnessFooter" loading="lazy">
+                            <img class="logofooter" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitnessFooter" loading="lazy" data-aos="fade-up">
                         </a>
                         </section>
             <section class="col-12 col-md-4 footerCol">
                 <nav id="malenaFitness">
-                     <ul class="listaNavFooter">
+                     <ul class="listaNavFooter" data-aos="fade-up">
                         <h4 class="tituloFooter">MALENA FITNESS</h4>
                         <li class="listaItemFooter"><a class="linkNavFooter" href="../index.html">Inicio</a></li>
                         <li class="listaItemFooter"><a class="linkNavFooter" href="../pages/clases.html">Clases</a></li>
@@ -108,15 +112,19 @@
                 </nav>
             </section>
                                 
-            <section class="col-12 col-md-4 footerCol">
+            <section class="col-12 col-md-4 footerCol" data-aos="fade-up">
                 <h4 class="tituloFooter">SEGUINOS EN REDES</h4>
-                <a href="404.html"><i class="fa-brands fa-square-whatsapp IconRedes"></i></a>
-                <a href="https://www.instagram.com/malena.fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-square-instagram IconRedes"></i></i></a>
+                <a class="hvr-float-shadow" href="404.html"><i class="fa-brands fa-square-whatsapp IconRedes"></i></a>
+                <a class="hvr-float-shadow" href="https://www.instagram.com/malena.fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-square-instagram IconRedes"></i></i></a>
             </section>
             </div>
             </section>
         </footer>
 
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
     </body>
 </html>

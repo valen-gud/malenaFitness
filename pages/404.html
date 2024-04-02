@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/b74e9db550.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">   
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 <body>
     <header class="header">
@@ -24,15 +25,23 @@
         <div class="container">
             <div class="row align-items-start">
                 <div class="col-12 text-center">
-                    <img class="imgError rounded-circle" src="../assets/img/comunicate.jpg" alt="Error404" title="Error 404">
+                    <img class="imgError rounded-circle" src="../assets/img/comunicate.jpg" alt="Error404" title="Error 404" data-aos="flip-left" data-aos-delay="200">
                 </div>
-                <div class="col-12 text-center">
-                    <h2 class="tituloH2Error">¡Próximamente en <span class="resaltar">Malena Fitness!</span> </h2>
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="tituloH2Error" >¡Próximamente en <span class="resaltar">Malena Fitness!</span> </h2>
                     <h3 class="h3Error"> Por el momento la página a la que quiere acceder, no se encuentra disponible. Estamos trabajando para solucinarlo.</h3>
-                    <input class="linkError" type="button" onclick="history.back()" name="Regresar" value="Regresar">
-                </div>
-            </div>
+                <div class="divBotoneserror hvr-radial-out">   
+                    <input class="btn-error" type="button" onclick="history.back()" name="Regresar" value="Regresar">
+                </div>    
+                </div> 
+                
+            </div>     
         </div>
     </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
