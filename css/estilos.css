@@ -6,6 +6,7 @@
 }
 
 body{
+    background-color:beige;
     font-family: "Roboto", sans-serif;
     color: #1e1e1e;
 }
@@ -57,12 +58,13 @@ body{
     }
 }
 
-/*estilos del mainIndex*/
+/*estilos mainIndex*/
 .carousel-item {
     height: 50vh;
     object-fit:auto;
 }
 .carousel-item img{
+    margin-top: 30px;
     height: 100%;
     object-fit: cover;
 }
@@ -74,7 +76,7 @@ body{
 .seccionTitulo{
     text-align: center;
     display: block;
-    color: #1e1e1e;
+    color: #FB4D71;
     line-height: 1.5;
     .tituloPrincipal{
         padding-top: 50px;
@@ -83,27 +85,34 @@ body{
         font-weight: 700;
         .grosor1{
             font-weight: 100;
+            color: #1e1e1e;
         }
         .grosor2{
             font-weight: 100;
+            color: #1e1e1e;
         }
     }
+   
     .parrafo{
-        padding-top: 30px;
-        padding-bottom:30px;
+        color: #1e1e1e;
         text-align: left;
+       .resaltar{
+        font-weight: bold;
+        color: #FB4D71;
+       }
     }
 }    
 
 .tituloH2{
     color: #1e1e1e;
     text-align: center;
-    .parrafo{
-        padding-top: 30px;
-        padding-bottom:30px;
-        text-align: left;
-    }
-}    
+    padding-top: 50px;
+}   
+
+.tituloH2contacto{
+    color: #1e1e1e;
+    text-align: center;
+}
 
 
 .btn-primary{
@@ -135,6 +144,10 @@ body{
     margin-bottom: 40px;
     width: 200px;
     height: 300px;
+    }
+    .resaltar{
+    font-weight: bold;
+    color: #FB4D71;
     }
 }
 
@@ -185,13 +198,14 @@ body{
             padding: 10px;
             margin: 5px;
             cursor: pointer;
-        }
-        .boton:hover{
+            &:hover{
             color: #1e1e1e;
             background-color: #d4cdcd;
             border-color: #d4cdcd;
             border-bottom: solid 5px #FB4D71;
-        }     
+            }     
+        }
+        
     }
     @media screen and (max-width: 768px){
         .formularioContacto{
@@ -226,11 +240,12 @@ body{
             .linkNavFooter{
                 color: #363636;
                 text-decoration: none;
-                font-size: 1rem;
-            }
-            .linkNavFooter:hover{
+                font-size: 1rem; 
+                &:hover{
                 color: #817d7d;
+                }
             }
+           
             .linkNavFooter:active{
                 font-size: 1.3rem;
             }
@@ -345,6 +360,10 @@ body{
     font-size: 2.8rem;
     padding-top: 50px;
     padding-bottom: 15px;
+    .resaltar{
+        font-weight: bold;
+        color: #FB4D71;
+    }
 }
 .h3Error{
     color: #1e1e1e;
@@ -366,12 +385,13 @@ body{
     text-align: center;
     padding: 10px;
     margin-top:10px;
-}
-.linkError:hover{
+    &:hover{
     background-color: #d4cdcd;
     border-color: #d4cdcd;
     border-bottom: solid 5px #FB4D71;   
     color: #1e1e1e;
+}
+
    
 }
 @media screen and (max-width: 768px){
