@@ -1,0 +1,27 @@
+/*estilos mainNosotras*/
+.row{
+    padding:$t-30px;
+    .card{
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        .imgOpiniones {
+        margin-top: $t-40px;
+        margin-left:$t-40px;
+        margin-bottom:$t-40px;
+        width: $t-200px;
+        height:$t-300px;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+        }
+        .resaltar{
+        font-weight: bold;
+        color: $color-rosa;
+        }
+        @media screen and (max-width: 768px){
+            margin-top: 50px;
+        }
+    }
+}
+
+.card{
+    @include cambiar-color;
+}

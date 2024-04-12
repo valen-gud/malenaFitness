@@ -1,0 +1,4 @@
+
+@mixin cambiar-color ($bg-color:$color-gris-principal){
+    background-color:$bg-color;    
+}

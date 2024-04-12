@@ -1,0 +1,16 @@
+
+/*carrusel mainIndex*/
+.carousel-item {
+    height: 50vh;
+    object-fit:auto;
+}
+.carousel-item img{
+    margin-top:$t-30px;
+    height:$t-100por;
+    object-fit: cover;
+}
+@media screen and (max-width:768){
+    .carousel-item{
+        height: 100vh;
+    }
+}
