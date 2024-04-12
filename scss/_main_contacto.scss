@@ -1,0 +1,57 @@
+/*estilos mainContacto*/
+/*titulo h2 solo pagina contancto*/
+.tituloH2contacto{
+    color: $color-fuente;
+    text-align: center;
+}
+.seccionComunicarse{
+        .imgContacto{
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+        height: $t-500px;
+        width:$t-400px;
+    }
+    .formularioContacto{
+        .etiqueta{
+            font-size: 1.1rem;
+            color: $color-fuente;
+            text-align: left;
+            font-weight: bold;
+            padding-left: $t-10px;
+        }
+        .relleno{
+            width:$t-100por;
+            font-size: 1.1rem;
+            border: 1px solid  $color-fuente-nav;
+            border-radius: 7px;
+            padding: $t-10px;
+            margin: $t-5px $t-5px $t-20px $t-5px;
+        }
+        .relleno:active{
+            background-color:$color-gris-principal;
+        }
+        .relleno:focus {
+            color:$color-fuente;
+            background-color: $color-gris-principal;
+            border-color: $color-fuente-nav;
+            outline: 0;
+            box-shadow: 0 0 0 0.1rem #553d2a57;
+        }
+        .divBotones {
+            margin: $t-0px $t-30px $t-0px $t-30px;
+            border-radius: $t-25px;      
+        }
+    }
+    @media screen and (max-width: 768px){
+        .formularioContacto{
+            text-align: center;
+            width:$t-100por;
+            height:$t-100por;
+        }
+        .imgContacto{
+        width: $t-300px;
+        height:$t-400px;
+        text-align: center;
+        margin-bottom:$t-30px;
+        }
+    }
+}

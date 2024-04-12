@@ -1,0 +1,58 @@
+/*estilos mainError*/
+.container{
+    .imgError{
+        width:$t-300px;
+        height:$t-300px;    
+    }
+    .tituloH2Error{
+        color: $color-fuente;
+        text-align: center;
+        font-size: 2.8rem;
+        padding-top: $t-50px;
+        padding-bottom: 15px;
+        .resaltar{
+            font-weight: bold;
+            color: $color-rosa;
+        }
+    }
+    .h3Error{
+        color: $color-fuente;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-bottom: $t-50px;
+    }
+    .divBotoneserror {
+        text-align: center;
+        padding: 0%;
+        border-radius:$t-25px;      
+        .btn-error{
+            width:$t-100por;
+            background-color: rgba(212, 12, 12, 0);
+            color: $color-fuente;
+            border: 1px solid $color-fuente-nav;
+            border-radius:$t-25px;
+            font-size:$t-16px;
+            text-align: center;
+            padding: $t-10px;
+            cursor: pointer;
+            &:hover{
+                color: $color-fuente;
+                background-color: rgba(212, 12, 12, 0);
+                border-color: $color-fuente-nav;
+            
+            }
+        }
+        @media screen and (max-width: 768px){
+            .tituloH2Error{
+                font-size: 2.2rem;
+            }
+            .h3Error{
+                font-size: 1.1rem;
+            }
+            .imgError{
+                width:$t-250px;
+                height:$t-250px;
+            }
+        }
+    }
+} 

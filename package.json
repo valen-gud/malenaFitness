@@ -1,0 +1,18 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "proyecto desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/valen-gud/malenaFitness.git)"
+  },
+  "author": "valen",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
+}

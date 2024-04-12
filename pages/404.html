@@ -12,14 +12,39 @@
     </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitness"> 
-                </a>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitness"> 
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end gap-2">
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link active colorGrisOscuro fs-5" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link colorGrisOscuro fs-5"  href="./clases.html">Clases</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link colorGrisOscuro fs-5 dropdown-toggle" href="./recetas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recetas
+                    </a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link colorGrisOscuro fs-5" href="./nosotras.html">Nosotras</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link colorGrisOscuro fs-5" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
 
     <main>
         <div class="container">
@@ -38,6 +63,37 @@
             </div>     
         </div>
     </main>
+
+    <footer class="footer"> 
+        <section class="infoFooter mt-5 container">
+            <div class="row alto40vh">
+                <section class="col-12 col-md-4 footerCol">
+                     <a href="../index.html">
+                        <img class="logofooter" src="../assets/img/malena_fitness_blanco.jpg" alt="logoMalenaFitnessFooter" loading="lazy" data-aos="flip-left">
+                    </a>
+                </section>
+                
+                <section class="col-12 col-md-4 footerCol">
+                    <nav id="malenaFitness" >
+                        <ul class="listaNavFooter">
+                            <h4 class="tituloFooter">MALENA FITNESS</h4>
+                            <li class="listaItemFooter"><a class="linkNavFooter" href="../index.html">Inicio</a></li>
+                            <li class="listaItemFooter"><a class="linkNavFooter" href="./clases.html">Clases</a></li>
+                            <li class="listaItemFooter"><a class="linkNavFooter" href="./recetas.html">Recetas</a></li>
+                            <li class="listaItemFooter"><a class="linkNavFooter" href="./clases.html">Nosotras</a></li>
+                            <li class="listaItemFooter"><a class="linkNavFooter" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                
+                <section class="col-12 col-md-4 footerCol">
+                    <h4 class="tituloFooter">SEGUINOS EN REDES</h4>
+                    <a class="hvr-float-shadow" href="404.html"><i class="fa-brands fa-square-whatsapp IconRedes"></i></a>
+                    <a class="hvr-float-shadow" href="https://www.instagram.com/malena.fitness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-square-instagram IconRedes "></i></i></a>
+                </section>
+            </div>
+        </section>
+    </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

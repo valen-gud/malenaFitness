@@ -1,518 +1,561 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0; 
+@charset "UTF-8";
+/*colores*/
+/*tamaños en px*/
+/*tamaño en %*/
+/*mapa color rosa de fuentes en parrafors y titulos*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color:#d4cdcd89;
-    font-family: "Roboto", sans-serif;
-    color: #1e1e1e;
+body {
+  background-color: rgba(212, 205, 205, 0.537254902);
+  font-family: "Roboto", sans-serif;
+  color: #1e1e1e;
 }
+
+/*titulos h1 todas las paginas*/
+.seccionTitulo {
+  text-align: center;
+  display: block;
+  color: #FB4D71;
+  line-height: 1.5rem;
+}
+.seccionTitulo .tituloPrincipal {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.seccionTitulo .tituloPrincipal .grosor1 {
+  color: #1e1e1e;
+}
+.seccionTitulo .parrafo {
+  color: #1e1e1e;
+  text-align: left;
+}
+
+/*mapa para color rosa de fuentes*/
+.resaltar {
+  color: #FB4D71;
+  font-weight: bold;
+}
+
+/*titulo h2 todas las paginas*/
+.tituloH2 {
+  color: #1e1e1e;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/*titulo h3 para recetas*/
+.tituloH3 {
+  color: #1e1e1e;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+/*titulo H5 para recetas*/
+.tituloH5 {
+  margin: 10px;
+}
+
+/*botones para las pags. clases, contacto y error404*/
+.btn-primary {
+  width: 120px;
+  background-color: rgba(212, 12, 12, 0);
+  color: #1e1e1e;
+  border: 1px solid #363636;
+  border-radius: 25px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: #1e1e1e;
+  background-color: rgba(212, 12, 12, 0);
+  border-color: #363636;
+}
+
+/*animaciones para los botones*/
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(212, 12, 12, 0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d4cdcd;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: #1e1e1e;
+}
+
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
 /*estilos del header*/
-.header{background-color: #d4cdcd;
-    z-index: 1000;
-    .logo{
-        width: 150px;
-        height: 80px;
-        object-fit: cover;
-    }
-    .navbar-toggler:hover {
-        border-color:#817d7d;
-    }
-    .navbar-toggler:focus {
-        color: transparent;
-    }
-    .navbar-toggler-icon {
-        color: #1e1e1e;
-        font-size: 1.5rem;
-        padding-top: 5px;
-    }
+.header {
+  background-color: #d4cdcd;
+  z-index: 1000;
 }
-.navbar-light.bg-nav{
-    background-color: #d4cdcd;
-        
-    .navbar-nav{
-        .nav-link.colorGrisOscuro{
-            color: #363636;
-           
-        }
-        .dropdown-item{
-            background-color: #fff;
-            color: #1e1e1e;
-        }
-        }
-        .nav-link.colorGris{
-        color: #817d7d;
-        
-    }
-    @media screen and (max-width: 768px){
-        .navbar-light.bg-nav{
-            width: 100vh;
-            height: 100vh;
-        }
-    }
+.header .logo {
+  width: 160px;
+  height: 80px;
+  object-fit: cover;
 }
-/* animaciones para barra de navegación*/
-.hvr-underline-from-center {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
+.header .navbar-toggler:hover {
+  border-color: #817d7d;
+}
+.header .navbar-toggler:focus {
+  color: transparent;
+}
+.header .navbar-toggler-icon {
+  color: #1e1e1e;
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+.header .navbar-light.bg-nav {
+  background-color: #d4cdcd;
+  /* animaciones para barra de navegación*/
+}
+.header .navbar-light.bg-nav .navbar-nav .nav-link.colorGrisOscuro {
+  color: #363636;
+}
+.header .navbar-light.bg-nav .navbar-nav .dropdown-item {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+.header .navbar-light.bg-nav .nav-link.colorGris {
+  color: #817d7d;
+}
+@media screen and (max-width: 768px) {
+  .header .navbar-light.bg-nav .navbar-light.bg-nav {
+    width: 100vh;
+    height: 100vh;
   }
-  .hvr-underline-from-center:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 51%;
-    right: 51%;
-    bottom: 0;
-    background: #FB4D71;
-    height: 4px;
-    -webkit-transition-property: left, right;
-    transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+}
+.header .navbar-light.bg-nav .hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.header .navbar-light.bg-nav .hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #FB4D71;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.header .navbar-light.bg-nav .hvr-underline-from-center:hover:before, .header .navbar-light.bg-nav .hvr-underline-from-center:focus:before, .header .navbar-light.bg-nav .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*estilos del footer*/
+.footer {
+  background-color: #d4cdcd;
+  /*animaciones del footer*/
+}
+.footer .logofooter {
+  width: 150px;
+  height: 80px;
+  object-fit: cover;
+}
+.footer .footerCol {
+  margin-top: 20px;
+}
+.footer .listaNavFooter {
+  list-style: none;
+  text-align: left;
+}
+.footer .listaNavFooter .listaItemFooter {
+  margin: 0px 0px 5px 0px;
+}
+.footer .listaNavFooter .listaItemFooter .linkNavFooter {
+  color: #363636;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.footer .listaNavFooter .listaItemFooter .linkNavFooter:hover {
+  color: #817d7d;
+}
+.footer .listaNavFooter .listaItemFooter .linkNavFooter:active {
+  font-size: 1.3rem;
+}
+.footer .tituloFooter {
+  font-size: 1.3rem;
+  color: #363636;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.footer .IconRedes {
+  color: #363636;
+  font-size: 25px;
+  margin: 7px;
+  text-align: left;
+}
+.footer .hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.footer .hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.footer .hvr-float-shadow:hover, .footer .hvr-float-shadow:focus, .footer .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.footer .hvr-float-shadow:hover:before, .footer .hvr-float-shadow:focus:before, .footer .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+@media screen and (max-width: 768px) {
+  .footer .footer {
+    width: 100%;
+    margin: 0 auto;
   }
-  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-    left: 0;
-    right: 0;
+  .footer .footer .listaNavFooter {
+    text-align: left;
+    padding: 0px 12px;
+    margin: 20px 0px 0px;
   }
-  
+}
 
 /*carrusel mainIndex*/
 .carousel-item {
-    height: 50vh;
-    object-fit:auto;
+  height: 50vh;
+  object-fit: auto;
 }
-.carousel-item img{
-    margin-top: 30px;
+
+.carousel-item img {
+  margin-top: 30px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768) {
+  .carousel-item {
+    height: 100vh;
+  }
+}
+/*estilos mainNosotras*/
+.row {
+  padding: 30px;
+}
+.row .card {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.row .card .imgOpiniones {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  width: 200px;
+  height: 300px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+}
+.row .card .resaltar {
+  font-weight: bold;
+  color: #FB4D71;
+}
+@media screen and (max-width: 768px) {
+  .row .card {
+    margin-top: 50px;
+  }
+}
+
+.card {
+  background-color: #d4cdcd;
+}
+
+/*estilos mainRecetas*/
+.seccionRecetas .grillaRecetasDesayuno .Desayuno {
+  width: 70%;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 250px 180px;
+  grid-template-areas: "grilla1 grilla1" "grilla2 grilla3" "grilla2 grilla3";
+  gap: 30px;
+}
+.seccionRecetas .grillaRecetasDesayuno .Desayuno .receta1 {
+  grid-area: grilla1;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasDesayuno .Desayuno .receta2 {
+  grid-area: grilla2;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasDesayuno .Desayuno .receta3 {
+  grid-area: grilla3;
+  position: relative;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasDesayuno .Desayuno .receta1 img, .seccionRecetas .grillaRecetasDesayuno .Desayuno .receta2 img, .seccionRecetas .grillaRecetasDesayuno .Desayuno .receta3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.seccionRecetas .grillaRecetasAlmuerzo .Almuerzo {
+  width: 70%;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 250px 180px;
+  grid-template-areas: "grilla1 grilla1" "grilla2 grilla3" "grilla2 grilla3" "grilla4 grilla4";
+  gap: 30px;
+}
+.seccionRecetas .grillaRecetasAlmuerzo .Almuerzo .receta5 {
+  grid-area: grilla3;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasAlmuerzo .Almuerzo .receta6 {
+  grid-area: grilla2;
+  position: relative;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasAlmuerzo .Almuerzo .receta7 {
+  grid-area: grilla1;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasAlmuerzo .Almuerzo .receta5 img, .seccionRecetas .grillaRecetasAlmuerzo .Almuerzo .receta6 img, .seccionRecetas .grillaRecetasAlmuerzo .Almuerzo .receta7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.seccionRecetas .grillaRecetasCena .Cena {
+  width: 70%;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 250px 180px;
+  grid-template-areas: "grilla1 grilla1" "grilla2 grilla3" "grilla2 grilla3";
+  gap: 30px;
+}
+.seccionRecetas .grillaRecetasCena .Cena .receta8 {
+  grid-area: grilla3;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasCena .Cena .receta9 {
+  grid-area: grilla1;
+  position: relative;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasCena .Cena .receta10 {
+  grid-area: grilla2;
+  margin-bottom: 70px;
+}
+.seccionRecetas .grillaRecetasCena .Cena .receta8 img, .seccionRecetas .grillaRecetasCena .Cena .receta9 img, .seccionRecetas .grillaRecetasCena .Cena .receta10 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width: 768px) {
+  .seccionRecetas .grillaRecetasDesayuno .Desayuno {
+    width: 85%;
     height: 100%;
-    object-fit: cover;
+    grid-template-rows: 150px 150px 120px 50px;
+    gap: 40px;
+  }
+  .seccionRecetas .grillaRecetasAlmuerzo .Almuerzo {
+    width: 85%;
+    grid-template-rows: 150px 150px 120px 50px;
+    gap: 40px;
+  }
+  .seccionRecetas .grillaRecetasCena .Cena {
+    width: 85%;
+    grid-template-rows: 150px 150px 120px 50px;
+    gap: 40px;
+  }
 }
-@media screen and (max-width:768){
-    .carousel-item{
-        height: 100vh;
-    }
-}
-/*titulos h1 todas las paginas*/
-.seccionTitulo{
-    text-align: center;
-    display: block;
-    color: #FB4D71;
-    line-height: 1.5;
-    .tituloPrincipal{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        font-size: 3rem;
-        font-weight: 700;
-        .grosor1{
-            font-weight: 100;
-            color: #1e1e1e;
-        }
-        .grosor2{
-            font-weight: 100;
-            color: #1e1e1e;
-        }
-    }
-   
-    .parrafo{
-        color: #1e1e1e;
-        text-align: left;
-       .resaltar{
-        font-weight: bold;
-        color: #FB4D71;
-       }
-    }
-}    
-/*titulo h2 todas las paginas*/
-.tituloH2{
-    color: #1e1e1e;
-    text-align: center;
-    padding-top: 50px;
-}   
 
-/*botones*/
-.btn-primary{
-    width: 120px;
-    background-color: rgba(212, 12, 12, 0);
-    color: #1e1e1e;
-    border: 1px solid #363636;
-    border-radius: 25px;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-    &:hover{
-        color: #1e1e1e;
-        background-color: rgba(212, 12, 12, 0);
-        border-color: #363636;
-       
-    }
-}
-/*animaciones para los botones*/
-.hvr-radial-out {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(212, 12, 12, 0);;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  .hvr-radial-out:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #d4cdcd;
-    border-radius: 100%;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
-    color: #1e1e1e;
-  }
-  .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-  }
-/*estilos de pagina nosotras*/
-.row{
-    padding: 30px;
-    .card{
-        text-align: center;
-        .imgOpiniones {
-        margin-top: 40px;
-        margin-left: 40px;
-        margin-bottom: 40px;
-        width: 200px;
-        height: 300px;
-        }
-        .resaltar{
-        font-weight: bold;
-        color: #FB4D71;
-        }
-    }
-}
-/*estilos Contacto*/
+/*estilos mainContacto*/
 /*titulo h2 solo pagina contancto*/
-.tituloH2contacto{
-    color: #1e1e1e;
+.tituloH2contacto {
+  color: #1e1e1e;
+  text-align: center;
+}
+
+.seccionComunicarse .imgContacto {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  height: 500px;
+  width: 400px;
+}
+.seccionComunicarse .formularioContacto .etiqueta {
+  font-size: 1.1rem;
+  color: #1e1e1e;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.seccionComunicarse .formularioContacto .relleno {
+  width: 100%;
+  font-size: 1.1rem;
+  border: 1px solid #363636;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 5px 5px 20px 5px;
+}
+.seccionComunicarse .formularioContacto .relleno:active {
+  background-color: #d4cdcd;
+}
+.seccionComunicarse .formularioContacto .relleno:focus {
+  color: #1e1e1e;
+  background-color: #d4cdcd;
+  border-color: #363636;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(85, 61, 42, 0.3411764706);
+}
+.seccionComunicarse .formularioContacto .divBotones {
+  margin: 0px 30px 0px 30px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .seccionComunicarse .formularioContacto {
     text-align: center;
-}
-.seccionComunicarse{
-        .imgContacto{
-        height: 500px;
-        width: 400px;
-    }
-    .formularioContacto{
-        .etiqueta{
-            font-size: 1.1rem;
-            color: #1e1e1e;
-            text-align: left;
-            font-weight: bold;
-            padding-left: 10px;
-        }
-        .relleno{
-            width: 100%;
-            font-size: 1.1rem;
-            border: 1px solid  #363636;
-            border-radius: 7px;
-            padding: 10px;
-            margin: 5px 5px 20px 5px;
-        }
-        .relleno:active{
-            background-color:#d4cdcd;
-        }
-        .relleno:focus {
-            color:#1e1e1e;
-            background-color: #d4cdcd;
-            border-color: #363636;
-            outline: 0;
-            box-shadow: 0 0 0 0.1rem #553d2a57;
-        }
-        .divBotones {
-            margin: 0px 30px 0px 30px;
-            border-radius: 25px;      
-        }
-    }
-    @media screen and (max-width: 768px){
-        .formularioContacto{
-            text-align: center;
-            width: 100%;
-            height: 100%;
-        }
-        .imgContacto{
-        width: 300px;
-        height: 400px;
-        text-align: center;
-        margin-bottom: 30px;
-        }
-    }
-}
-/*estilos del footer*/
-.footer{
-    background-color: #d4cdcd;
-    .logofooter{
-        width: 150px;
-        height: 80px;
-        object-fit: cover;
-    }  
-    .footerCol{
-        margin-top: 20px;
-    }
-    .listaNavFooter{
-        list-style: none;
-        text-align: left;
-        .listaItemFooter{
-            margin: 0px 0px 5px 0px;
-            .linkNavFooter{
-                color: #363636;
-                text-decoration: none;
-                font-size: 1rem; 
-                &:hover{
-                color: #817d7d;
-                }
-            }
-           
-            .linkNavFooter:active{
-                font-size: 1.3rem;
-            }
-        }
-    }  
-    .tituloFooter{
-        font-size: 1.3rem;
-        color: #363636;
-        font-weight: 700;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .IconRedes{
-        color:#363636;
-        font-size: 25px;
-        margin: 7px;
-        text-align: left;
-    }
-}
-/*animaciones del footer*/
-.hvr-float-shadow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    width: 100%;
+    height: 100%;
   }
-  .hvr-float-shadow:before {
-    pointer-events: none;
-    position: absolute;
-    z-index: -1;
-    content: '';
-    top: 100%;
-    left: 5%;
-    height: 10px;
-    width: 90%;
-    opacity: 0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    /* W3C */
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform, opacity;
-    transition-property: transform, opacity;
-  }
-  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    /* move the element up by 5px */
-  }
-  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
-    opacity: 1;
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
-  }
-  
-@media screen and (max-width: 768px){
-    .footer{
-        width: 100%;
-        margin: 0 auto;
-       
-       .listaNavFooter{
-        text-align: left;
-        padding: 0px 12px;
-        margin: 20px 0px 0px;
-       }
-    }
-}
-
-/*estilos de pagina recetas*/
-.seccionRecetas{ 
-    .grillaRecetas{
-        width: 70%;
-        padding-top: 30px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 350px 250px 180px 350px;
-        grid-template-areas: "grilla1 grilla1"
-                             "grilla2 grilla3"
-                             "grilla4 grilla3"
-                             "grilla4 grilla5"
-                             "grilla6 grilla7"
-                             "grilla9 grilla8"
-                             "grilla9 grilla10"
-                             ;
-        gap: 30px;   
-        .receta1{
-            grid-area: grilla1;
-        }
-        .receta2{
-            grid-area: grilla2;
-        }
-        .receta3{
-            grid-area: grilla3;
-            position: relative;
-        } 
-        .receta4{
-            grid-area: grilla7;
-            position: relative; 
-        }    
-        .receta5{
-            grid-area: grilla5;
-        }
-        .receta6{
-            grid-area: grilla6;
-        }
-        .receta7{
-            grid-area: grilla4;
-        }
-        .receta8{
-            grid-area: grilla8;
-        }
-        .receta9{
-            grid-area: grilla9;
-        }
-        .receta10{
-            grid-area: grilla10;
-        }
-        .receta1, .receta2, .receta3, .receta4, .receta5, .receta6, .receta7, .receta8, .receta9, .receta10{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 12px;
-               
-            }
-
-        }   
-        /*animaciones para recetas*/
-        .hvr-box-shadow-outset {
-            display: inline-block;
-            vertical-align: middle;
-            -webkit-transform: perspective(1px) translateZ(0);
-            transform: perspective(1px) translateZ(0);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-            -webkit-transition-property: box-shadow;
-            transition-property: box-shadow;
-          }
-          .hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-          }
-    }
-    @media screen and (max-width: 768px){
-        .grillaRecetas{
-            width: 85%;
-            grid-template-rows: 150px 150px 120px 180px;
-            gap: 20px;
-        }
-    }
-}
-
-/*estilos de pagina error*/
-.imgError{
+  .seccionComunicarse .imgContacto {
     width: 300px;
-    height: 300px;    
-}
-.tituloH2Error{
-    color: #1e1e1e;
+    height: 400px;
     text-align: center;
-    font-size: 2.8rem;
-    padding-top: 50px;
-    padding-bottom: 15px;
-    .resaltar{
-        font-weight: bold;
-        color: #FB4D71;
-    }
-}
-.h3Error{
-    color: #1e1e1e;
-    text-align: center;
-    font-size: 1.2rem;
-    padding-bottom: 50px;
-}
-.divBotoneserror {
-    text-align: center;
-    padding: 0%;
-    border-radius: 25px;      
-    .btn-error{
-        width: 100%;
-        background-color: rgba(212, 12, 12, 0);
-        color: #1e1e1e;
-        border: 1px solid #363636;
-        border-radius: 25px;
-        font-size: 16px;
-        text-align: center;
-        padding: 10px;
-        cursor: pointer;
-        &:hover{
-            color: #1e1e1e;
-            background-color: rgba(212, 12, 12, 0);
-            border-color: #363636;
-           
-        }
-    }
-    
+    margin-bottom: 30px;
+  }
 }
 
-   
-@media screen and (max-width: 768px){
-    .tituloH2Error{
-        font-size: 2.2rem;
-    }
-    .h3Error{
-        font-size: 1.1rem;
-    }
-    .imgError{
-        width: 250px;
-        height: 250px;
-    }
+/*estilos mainError*/
+.container .imgError {
+  width: 300px;
+  height: 300px;
+}
+.container .tituloH2Error {
+  color: #1e1e1e;
+  text-align: center;
+  font-size: 2.8rem;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+.container .tituloH2Error .resaltar {
+  font-weight: bold;
+  color: #FB4D71;
+}
+.container .h3Error {
+  color: #1e1e1e;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 50px;
+}
+.container .divBotoneserror {
+  text-align: center;
+  padding: 0%;
+  border-radius: 25px;
+}
+.container .divBotoneserror .btn-error {
+  width: 100%;
+  background-color: rgba(212, 12, 12, 0);
+  color: #1e1e1e;
+  border: 1px solid #363636;
+  border-radius: 25px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.container .divBotoneserror .btn-error:hover {
+  color: #1e1e1e;
+  background-color: rgba(212, 12, 12, 0);
+  border-color: #363636;
+}
+@media screen and (max-width: 768px) {
+  .container .divBotoneserror .tituloH2Error {
+    font-size: 2.2rem;
+  }
+  .container .divBotoneserror .h3Error {
+    font-size: 1.1rem;
+  }
+  .container .divBotoneserror .imgError {
+    width: 250px;
+    height: 250px;
+  }
 }
 
+/*# sourceMappingURL=estilos.css.map */

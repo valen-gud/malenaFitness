@@ -1,0 +1,134 @@
+/*estilos mainRecetas*/
+.seccionRecetas{ 
+    .grillaRecetasDesayuno .Desayuno{
+        width: 70%;
+        padding-top:$t-30px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: $t-350px $t-250px $t-180px ;
+        grid-template-areas: "grilla1 grilla1"
+                             "grilla2 grilla3"
+                             "grilla2 grilla3"
+                             ;
+        gap:$t-30px;   
+        .receta1{
+            grid-area: grilla1;
+            margin-bottom: $t-70px;
+        }
+        .receta2{
+            grid-area: grilla2;
+            margin-bottom: $t-70px;
+        }
+        .receta3{
+            grid-area: grilla3;
+            position: relative;
+            margin-bottom: $t-70px;
+        } 
+        
+        .receta1, .receta2, .receta3{
+            img{
+                width:$t-100por;
+                height:$t-100por;
+                object-fit: cover;
+                border-radius:$t-12px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+            }
+        }   
+    }
+   
+    
+    .grillaRecetasAlmuerzo .Almuerzo{
+        width: 70%;
+        padding-top:$t-30px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:$t-350px $t-250px $t-180px;
+        grid-template-areas: "grilla1 grilla1"
+                             "grilla2 grilla3"
+                             "grilla2 grilla3"
+                             "grilla4 grilla4"
+                             ;
+        gap:$t-30px;   
+        .receta5{
+            grid-area: grilla3;
+            margin-bottom: $t-70px;
+        }
+        .receta6{
+            grid-area: grilla2;
+            position: relative;
+            margin-bottom: $t-70px;
+        } 
+        .receta7{
+            grid-area: grilla1;
+            margin-bottom: $t-70px;
+        }
+        
+        .receta5, .receta6, .receta7{
+            img{
+                width:$t-100por;
+                height:$t-100por;
+                object-fit: cover;
+                border-radius:$t-12px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+            }
+
+        }  
+    }
+    .grillaRecetasCena .Cena{
+        width: 70%;
+        padding-top:$t-30px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:$t-350px $t-250px $t-180px;
+        grid-template-areas: "grilla1 grilla1"
+                             "grilla2 grilla3"
+                             "grilla2 grilla3"
+                             ;
+        gap:$t-30px;   
+        .receta8{
+            grid-area: grilla3;
+            margin-bottom: $t-70px;
+        }
+        .receta9{
+            grid-area: grilla1;
+            position: relative;
+            margin-bottom:$t-70px;
+        } 
+        .receta10{
+            grid-area: grilla2;
+            margin-bottom: $t-70px;
+        }
+        
+        .receta8, .receta9, .receta10{
+            img{
+                width:$t-100por;
+                height:$t-100por;
+                object-fit: cover;
+                border-radius:$t-12px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+            }
+
+        }  
+    }
+     @media screen and (max-width: 768px){
+        .grillaRecetasDesayuno .Desayuno{
+            width: 85%;
+            height: 100%;
+            grid-template-rows: $t-150px $t-150px $t-120px $t-50px;
+            gap: $t-40px;
+        }
+        .grillaRecetasAlmuerzo .Almuerzo{
+            width: 85%;
+            grid-template-rows: $t-150px $t-150px $t-120px $t-50px;
+            gap: $t-40px;
+        }
+        .grillaRecetasCena .Cena{
+            width: 85%;
+            grid-template-rows: $t-150px $t-150px $t-120px $t-50px;
+            gap: $t-40px;
+        }
+    }
+}
